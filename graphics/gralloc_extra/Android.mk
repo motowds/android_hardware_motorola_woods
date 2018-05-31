@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-ifneq ($(filter aio_otfp, $(TARGET_DEVICE)),)
+ifneq ($(filter woods, $(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \

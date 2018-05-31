@@ -18,8 +18,8 @@
 
 LOCAL_PATH:= $(call my-dir)
 
-# add your device if not mt6752
-ifneq ($(filter mt6752,$(TARGET_BOARD_PLATFORM)),)
+# add your device if not mt6737m
+ifneq ($(filter mt6737m,$(TARGET_BOARD_PLATFORM)),)
 
 # HAL module implemenation, not prelinked and stored in
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
@@ -50,4 +50,4 @@ LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif # mt6752
+endif # mt6737m
